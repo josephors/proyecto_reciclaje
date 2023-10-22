@@ -1,8 +1,0 @@
-modificaciones en settings.py
-creacion de carpetas y archivos
-modificacion de views.py
-
-en caso de dudas revisar chatgpt
-
-
-debemos sincronizar el trabajo colaborativo con github
