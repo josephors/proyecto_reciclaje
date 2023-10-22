@@ -1,0 +1,2 @@
+-desde views.py se organiza lo que es mostrado visualmente por la aplicación
+-todas estas variables raras como BLUE_DIR que son declaradas y usadas en settings.py son entendibles. Este archivo es para establecer las configuraciones y es como la central de la app. BASE_DIR, por ejemplo, es una variable que representa la carpeta principal (directorio base) del proyecto, para así ubicarlo de la manera más sencilla posible.
