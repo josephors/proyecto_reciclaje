@@ -1,7 +1,11 @@
 Proyecto IWG:
 
-Proyecto que consta en una aplicación web que, mediante un sistema de autodisposición, puedes acceder a una red de puntos de reciclaje o tú disponerte como uno e ir ganando puntos que son canjeables por ciertas recompensas.
+Proyecto que consta en una aplicación web que, mediante un sistema de autodisposición, puedes acceder a una red de puntos de reciclaje o tú disponerte como uno e ir ganando puntos que son canjeables por ciertas recompensas. También implementa un calendario al cual puedes sincronizarte desde Google u Outlook para avisarte de próximas recogidas de reciclaje, asi como recordatorios, eventos, etc.
 
+Estado general:
+- Frontend: 50%
+- Backend (db, arquitectura): 20%
+- Backend (API): 20%
 
 ---
 Tutorial inicialización servidor:
