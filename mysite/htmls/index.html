@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static "1650943201_wojak_studio_10.png" %}" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="http://127.0.0.1:8000/index/" class="menu-button">Inicio</a>
+            <a href="http://127.0.0.1:8000/pag2/" class="Bienvenida">Bienvenida de usuario</a>
+            <a href="http://127.0.0.1:8000/funciones/" class="Funciones">Funciones</a>
+            <a href="http://127.0.0.1:8000/Login/" class="login-button">Iniciar Sesión</a>
+        </div>
+    </header>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="{% static "y2mate.com - Loop personas felices_1080p.mp4" %}" type="video/mp4">
+        </video>
+        <div class="video-text">
+            <div class="text-line">"Grupo 10</div>
+            <div class="text-line">Recicla en la</div>
+            <div class="text-line">Nueva era"</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "Malardo.css" %}">
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="http://127.0.0.1:8000/signup/">
+            {% csrf_token %}
+            <div class="login-box">
+                <div class="input-container">
+                    <label for="correo">Correo electrónic</label>
+                    <input type="text" id="correo" name="correo" placeholder="Ingrese correo electrónico" required>
+                </div>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" required>
+                </div>    
+                <div class="input-container">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese contraseña" required>
+                </div>
+            
+                <button type="submit">Crear cuenta</button>
+            </div>
+        </form>
+ 
+        <form>
+            <button formaction="http://127.0.0.1:8000/Login/">Volver Atrás</button>
+        </form>
+    </div>
+</body>
+</html> 
+
