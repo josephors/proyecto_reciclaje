@@ -6,7 +6,7 @@ pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-
 o consultar última versión en: https://developers.google.com/calendar/api/quickstart/python
 
 # Uso:
-Habiendo terminado la instalación, el programa se estaría ejecutando exitosamente, desde el virtual enviroment, ejecutando el archivo main.py con el comando:
+Habiendo terminado la instalación, desde el virtual enviroment, el programa se estaría inicializando exitosamente ejecutando el archivo main.py con el comando:
 ```
 py main.py
 ```
