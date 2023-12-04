@@ -12,12 +12,16 @@
         <form>
             <button formaction="http://127.0.0.1:8000/index/">Volver Atrás</button>
           </form>
-        <form method="POST" action="http://127.0.0.1:8000/pag2/">
+        <form method="POST" action="http://127.0.0.1:8000/Login/">
             {% csrf_token %}  
             {% if messages %}
             {% for message in messages %}
             {% if message.tags == "success" %}
-            <div class="alert alert-success" role="alert">
+            <div style="background-color: #d4edda; border-color: #c3e6cb; color: #155724; padding: 10px; margin-bottom: 10px;" role="alert">
+                {{message}}
+            </div>
+            {% elif message.tags == "error" %}
+            <div style="background-color: #edd4d4; border-color: #e6c3c3; color: #6a2522; padding: 10px; margin-bottom: 10px;" role="alert">
                 {{message}}
             </div>
             {% endif %}
@@ -25,12 +29,12 @@
             {% endif %}
             <div class="login-box">
                 <div class="input-container">
-                    <label for="correo">Correo electrónico</label>
-                    <input type="text" id="correo" name="correo" placeholder="Ingrese correo electrónico" required>
+                    <label for="username">Correo electrónico</label>
+                    <input type="text" id="username" name="username" placeholder="Ingrese correo electrónico" required>
                 </div>
                 <div class="input-container">
-                   <label for="contrasena">Contraseña</label>
-                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese contraseña" required>
+                   <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingrese contraseña" required>
                 </div>
 
                 <div class="checkbox">
