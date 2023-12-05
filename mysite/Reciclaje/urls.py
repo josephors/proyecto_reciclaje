@@ -27,4 +27,5 @@ urlpatterns = [
     path('pag2/', views.pag2, name='pag2'),
     path('funciones/', views.funciones, name='funciones'),
     path('signup/', signup, name='signup'),
+    path('signout/', views.signout, name= 'signout')
 ]

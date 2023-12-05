@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from .forms import UsuarioForm, UserLoginForm
 from django.contrib.auth.models import User
 from .models import Usuario
@@ -16,7 +16,11 @@ from .models import Usuario
 def NombreFuncion (request):
     return HttpResponse('<h1>Martin te chupo el pico</h1>')
 def index (request):
-    return render(request, 'index.html')
+    idusername = request.session.get('idusername')
+    variable=False
+    if idusername is not None:
+        variable=True
+    return render(request, 'index.html', {'variable' : variable})
 
 def Login (request):
     if request.method == 'POST':
@@ -83,4 +87,8 @@ def signup(request):
         form = UsuarioForm()  
     return render(request, 'signup.html', {'form': form})    
 
+def signout(request):
+    logout(request)
+    variable = False
+    return redirect("index")
 
