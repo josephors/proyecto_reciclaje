@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Notificación</title>
+    <link rel="stylesheet" href="{% static 'css/Malardo2.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="http://127.0.0.1:8000/formulario2/">
+            {% csrf_token %}  
+            <div class="login-box">
+                <div class="input-container">
+                    <label for="username">Correo electrónico</label>
+                    <input class="input-correo" type="text" id="username" name="username" placeholder="Ingrese correo electrónico" required>
+                </div>
+
+                <p class="subtitulo-form2 subtitulo-form2-a">Elige los días de reciclaje:</p>
+                <div class="input-container input-dias">
+                    <input type="checkbox" id="MO" name="dias" value="MO">
+                    <label for="dias">Lunes</label>
+                    <input type="checkbox" id="TU" name="dias" value="TU">
+                    <label for="dias">Martes</label>
+                    <input type="checkbox" id="WE" name="dias" value="WE">
+                    <label for="dias">Miércoles</label>
+                    <input type="checkbox" id="TH" name="dias" value="TH">
+                    <label for="dias">Jueves</label><br>
+                    <input type="checkbox" id="FR" name="dias" value="FR">
+                    <label for="dias">Viernes</label>
+                    <input type="checkbox" id="SA" name="dias" value="SA">
+                    <label for="dias">Sábado</label>
+                    <input type="checkbox" id="SU" name="dias" value="SU">
+                    <label for="dias">Domingo</label>
+                </div>
+
+                <p class="subtitulo-form2">Elige tu estilo:</p>
+                <div class="input-opcion">
+                    <div class="sub-input">
+                        <input type="radio" id="pomelo" name="opcion" value="0">
+                        <label for="pomelo">🍑</label>
+                    </div>
+                    <div class="sub-input">
+                        <input type="radio" id="manzana" name="opcion" value="1">
+                        <label for="manzana">🍎</label>
+                    </div>
+                    <div class="sub-input">
+                        <input type="radio" id="brocoli" name="opcion" value="2">
+                        <label for="brocoli">🥦</label>
+                    </div>
+                    <div class="sub-input">
+                        <input type="radio" id="berenjena" name="opcion" value="3">
+                        <label for="berenjena">🍆</label>
+                    </div>
+                </div>
+
+                <div class="opciones">
+                    <input type="submit" name="accion" value="Crear">
+                    <input type="submit" name="accion" value="Modificar">
+                    <input type="submit" name="accion" value="Eliminar">
+                </div>
+
+                <a class="a-button" href="http://127.0.0.1:8000/index/">Volver Atrás</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
