@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <form>
-            <button formaction="http://127.0.0.1:8000/index/">Volver Atrás</button>
+
           </form>
         <form method="POST" action="http://127.0.0.1:8000/Login/">
             {% csrf_token %}  
@@ -37,11 +37,16 @@
                     <input type="password" id="password" name="password" placeholder="Ingrese contraseña" required>
                     <button type="submit">Iniciar Sesión</button>
         </form>     
-                <div class="button">
+                <div class="small-button-container">
                     <form>
                         <button formaction="http://127.0.0.1:8000/signup">Crear cuenta</button>
+                        
                     </form>
-
+                    <form>
+                        <button class="button" formaction="http://127.0.0.1:8000/index/">Volver Atrás</button>
+                    
+                    </form>
+                    
                 </div>
             </div>
         </div>
