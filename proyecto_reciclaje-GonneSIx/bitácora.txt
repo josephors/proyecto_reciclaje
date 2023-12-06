@@ -1,0 +1,16 @@
+Proyecto IWG:
+
+Proyecto que consta en una aplicación web que, mediante un sistema de autodisposición, puedes acceder a una red de puntos de reciclaje o tú disponerte como uno e ir ganando puntos que son canjeables por ciertas recompensas. También implementa un calendario al cual puedes sincronizarte desde Google u Outlook para avisarte de próximas recogidas de reciclaje, asi como recordatorios, eventos, etc.
+
+---
+Tutorial inicialización servidor:
+---
+
+1. Abrir cmd en el directorio del virtual enviroment y activar con "Scripts\activate.bat".
+2. Ir a carpeta de proyecto con "cd mysite".
+3. Activar el servidor con "py manage.py runserver".
+4. Abrir el servidor en cuestión en el navegador en el puerto correspondiente.
+
+5. Desactivar el servidor con ctrl+c.
+6. Desactivar virtual enviroment con "deactivate".
+7. Salir del cmd.
