@@ -1,4 +1,7 @@
-# Proyecto Reciclaje: Requerimientos:
+# Proyecto Reciclaje:
+Ecolendario. Aplicación para la organización de tus días de para reciclar mediante la interacción con la API de Google Cloud, autentificación de la cuenta de Google y Google Calendar.
+
+## Requerimientos:
 Instalar biblioteca cliente de Google para Python en directorio del virtual enviroment:
 ```
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
